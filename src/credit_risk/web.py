@@ -13,7 +13,7 @@ from werkzeug.exceptions import HTTPException
 from credit_risk.schema import FEATURES
 from credit_risk.service import PredictionService
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path.cwd()
 
 
 def create_app(config=None):

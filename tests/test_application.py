@@ -21,7 +21,7 @@ def fixture_service():
 @pytest.fixture(name="client")
 def fixture_client():
     """Expose Flask's in-process client."""
-    return create_app({"TESTING": True}).test_client()
+    return create_app({"TESTING": True, "MODEL_DIR": ROOT / "models"}).test_client()
 
 
 @pytest.mark.parametrize("value", [[], {}, None, [None], [{}], [{}] * 501])
