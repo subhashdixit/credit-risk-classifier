@@ -6,7 +6,9 @@ An analyst enters a synthetic credit-history profile and sees the model's P1–P
 
 > This is an educational portfolio application. Source labels describe four ordered categories, not observed default events. Scores are **not calibrated probabilities of default**. Do not use the app to approve/reject loans or upload private applicant information.
 
-[Quick start](#run-locally) · [Use the app](#use-the-application) · [Data](#data-and-target) · [Training](#training-from-source) · [Results](#measured-results) · [Deployment](#deployment-on-render) · [Rollback](#versioning-retraining-and-rollback)
+[**Open the live app**](https://credit-risk-classifier-r0ig.onrender.com/) · [Quick start](#run-locally) · [Use the app](#use-the-application) · [Data](#data-and-target) · [Training](#training-from-source) · [Results](#measured-results) · [Deployment](#deployment-on-render) · [Rollback](#versioning-retraining-and-rollback)
+
+![Deployed Credit Risk Explorer](docs/images/application.png)
 
 ## Problem statement and scope
 
