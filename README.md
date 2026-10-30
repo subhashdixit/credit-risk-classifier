@@ -1,5 +1,7 @@
 # Credit Risk Explorer
 
+**Live application:** [Open Credit Risk Classifier](https://credit-risk-classifier-r0ig.onrender.com) · [Source code](https://github.com/subhashdixit/credit-risk-classifier)
+
 A reproducible **four-category credit-risk learning project**, with a Flask web application, JSON API, CSV scoring, measured evaluation and CI/CD configuration.
 
 An analyst enters a synthetic credit-history profile and sees the model's P1–P4 category and relative class scores. A developer can reproduce the training, inspect the evaluation, run tests and deploy the same saved pipeline. The interface explains the result rather than making a lending decision.
