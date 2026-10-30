@@ -1,0 +1,16 @@
+{
+  "NETMONTHLYINCOME": 23000.0,
+  "Time_With_Curr_Empr": 92,
+  "Tot_Missed_Pmnt": 0,
+  "Age_Oldest_TL": 33,
+  "Age_Newest_TL": 8,
+  "Secured_TL": 1,
+  "Unsecured_TL": 1,
+  "num_times_60p_dpd": 0,
+  "max_recent_level_of_deliq": 0,
+  "num_std_12mts": 0,
+  "num_sub": 0,
+  "num_dbt": 0,
+  "enq_L3m": 1,
+  "time_since_recent_enq": 75
+}
