@@ -431,3 +431,14 @@ Monitor hosting startup/error logs and periodically run readiness plus a real pr
 - [Deploy Flask on Render](https://render.com/docs/deploy-flask)
 
 The repository license remains in [LICENSE](LICENSE). Source datasets and third-party materials may have separate rights.
+
+## Exact local dependency versions
+
+[DEPENDENCIES.md](DEPENDENCIES.md) lists the pinned runtime, development and training environments. `requirements.txt` now explicitly records all external runtime package versions, including transitive dependencies.
+
+```bash
+python3.11 -m venv .venv
+# Activate: source .venv/bin/activate (Windows: .venv\Scripts\activate)
+python -m pip install -r requirements.txt
+python -m pip check
+```
