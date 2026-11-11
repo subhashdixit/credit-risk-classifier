@@ -2,7 +2,7 @@
 
 ## 1. Project overview
 
-**Credit Risk Explorer** is a web app for inspecting how a machine learning model classifies a credit profile. It uses 14 numeric inputs to predict one of four historical categories, P1 through P4. Visitors can explore a single profile, score a CSV, or inspect the model’s evaluation.
+**Credit Risk Explorer** predicts one of four historical credit categories from 14 profile features. The repository covers workbook preparation, model selection, held-out evaluation, and scoring through a browser form, JSON API, or CSV upload.
 
 [Live demo](https://credit-risk-classifier-r0ig.onrender.com/) · [Source repository](https://github.com/subhashdixit/credit-risk-classifier) · [Model report](https://github.com/subhashdixit/credit-risk-classifier/blob/main/models/metrics.json)
 
@@ -10,9 +10,17 @@
 
 ## 2. Motivation and problem statement
 
-The original case study provides credit and account history across two workbooks. A reviewer needs a reproducible way to join those records, classify a new profile consistently, and see which historical categories the model confuses. This project solves that workflow by validating the source data, fitting one shared preprocessing and classification pipeline, and serving its results through a browser form, JSON API, and CSV upload.
+### Objective
 
-The model learns to reproduce the dataset’s historical `Approved_Flag` labels. The app orders them from P1 through P4, with P1 at the favorable end. The source files do not establish a default definition or prediction horizon, so the label represents a historical category.
+Learn a repeatable mapping from credit and account history to the source dataset’s four historical categories, P1 through P4, and evaluate how reliably the model distinguishes each category.
+
+### Problem statement
+
+Join the two source workbooks by prospect ID and predict the recorded `Approved_Flag` for an unseen profile with 14 selected numeric features. The source leaves the label construction and default horizon undocumented. P1 through P4 are historical category labels.
+
+### Motivation
+
+A reviewer needs consistent scoring when moving from a case-study workbook to a single profile or batch. Overall accuracy can also hide categories the model routinely confuses. The repository provides a shared preprocessing and prediction pipeline, per-category scores, and held-out results that expose those errors.
 
 ## 3. Solution and scope
 
